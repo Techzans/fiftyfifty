@@ -1,0 +1,12 @@
+@import "../../bourbon/bourbon"; // import bourbon
+@import "grid-settings"; // set up basic grid
+@import "../../neat/neat"; // import neat
+
+.container {
+    @include outer-container;
+}
+
+.content {
+    @include span-columns(6);
+    @include shift(2)
+}
