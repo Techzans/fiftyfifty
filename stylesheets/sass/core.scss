@@ -3,10 +3,10 @@
 @import "../../neat/neat"; // import neat
 
 .container {
-    @include outer-container;
+  @include outer-container;
 }
 
 .content {
-    @include span-columns(6);
-    @include shift(2)
+  @include span-columns(6);
+  @include shift(2)
 }
