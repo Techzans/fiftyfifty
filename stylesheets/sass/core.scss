@@ -51,12 +51,17 @@ h2 {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   margin:0;
+
+  @include media($mobile) {
+    font-size: em(60);  
+  }
 }
 
 a { // no underline, underline on hover
   text-decoration:none;
+  color: $black;
   &:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid $black;
     padding-bottom: 4px;
   }
 }
@@ -76,12 +81,23 @@ a { // no underline, underline on hover
 
 .container {
   @include outer-container;
+
 }
 
 .content {
   @include span-columns(6);
   @include shift(2);
   margin-top: 80px;
+
+  @include media($tablet) {
+    @include shift(1);
+    @include span-columns(6 of 8);
+  }
+
+  @include media($mobile) {
+    @include shift(1);
+    @include span-columns(3 of 4);  
+  }
 }
 
 $offset: 50px; // offset from elements above for copy
@@ -89,12 +105,15 @@ $offset: 50px; // offset from elements above for copy
 .column {
   @include span-columns(4 of 6);
   margin-top: $offset;
+
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
 }
 
 .infobox {
   @include span-columns(1.5 of 6);
   margin-top: $offset;
-  border-left: 1px solid tint($black, 20%);
   padding-left: 15px;
   p {
     font-size: $basesize * 0.7;
@@ -109,6 +128,10 @@ $offset: 50px; // offset from elements above for copy
     margin: -35px 0 -30px 0;
     color: $red;
     letter-spacing: -2px;
+  }
+
+  @include media($mobile) {
+    display:none;
   }
 }
 
@@ -129,33 +152,38 @@ $offset: 50px; // offset from elements above for copy
   $transparency-right: .7;
   $horizontal-angle: 90deg;
 
+  background: url(../../img/riverpic.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 12em 0 12em 0;
   position: relative;
-  line-height: 0;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-  margin-bottom: 0; // @TODO remove this?  
-  margin-top: 60px;
-  .first {
-    margin-top: 0;
-  }
+  display: table;
+  margin-bottom: 50px;
+  height: 100vh;
 
-  img {
-    width: 100%;
-    max-height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0; 
+  overflow:hidden;
+
+  .bigcopy { // the big fifty-fifty at the beginning
+    color: white;
+    position: absolute;
+    top: -40px;
+    left: -2px;
+    margin: auto;
+    z-index: 999;
+    text-align: center;
+    font-size:em(70);
   }
 
   .copy {
+    @include shift(2);
+    @include span-columns(6 of 10);
+
     color: white;
-    position: absolute;
     top: 30%;
     left: 30%;
     margin-top:70px;
-    z-index: 999;
-    @include transform(translate(-50%, -50%));
+    z-index: 9999;
 
     .subtitle {
       color: white;
@@ -181,7 +209,7 @@ $offset: 50px; // offset from elements above for copy
     }
   }
 
-  .overlay {
+.overlay {
     @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
       transparentize($image-gradient-color-bottom, $transparency-bottom));
     display: block;
@@ -196,119 +224,6 @@ $offset: 50px; // offset from elements above for copy
     }
   }
 }
-
-.fullnew { // this doesn't use absolute position
-
-  @include span-columns(10); // stretch all the way across
-
-  $image-gradient-color-top: orange; 
-  $transparency-top: .6;
-  $image-gradient-color-bottom: teal; 
-  $transparency-bottom: .6;
-  $vertical-angle: 180deg;
-
-  $image-gradient-color-left: teal; 
-  $transparency-left: .7;
-  $image-gradient-color-right: yellow; 
-  $transparency-right: .7;
-  $horizontal-angle: 90deg;
-
-  position: relative;
-  line-height: 0;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
-  margin-bottom: 0; // @TODO remove this?  
-  margin-top: 60px;
-
-  img {
-    width: 100%;
-    max-height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0; 
-  }
-
-  .copy {
-    color: white;
-    position: relative;
-
-    @include span-columns(6 of 10);
-    @include shift(1);
-
-    margin-top:-700px;
-
-    z-index: 999;
-
-    .subtitle {
-      color: white;
-      text-transform: none;
-      font-family: $serif;
-      font-weight: 900;
-      font-style: italic;
-      letter-spacing: 2px;
-      font-size: em(50);
-
-    }
-
-    .sub-subtitle {
-      margin-top: 40px;
-      font-weight: 200;
-      font-size: em(13);
-      letter-spacing: 1px;
-      color: white;
-    }
-
-    a {
-      color:white;
-    }
-  }
-
-  .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
-      transparentize($image-gradient-color-bottom, $transparency-bottom));
-    display: block;
-    @include position(absolute, 0px 0px 0px 0px);
-
-    &:after {
-      content: '';
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
-        transparentize($image-gradient-color-right, $transparency-right));
-      display: block;
-      @include position(absolute, 0px 0px 0px 0px);
-    }
-  }
-}
-
-.blueish {  
-  $image-gradient-color-top: $red; 
-  $transparency-top: .5;
-  $image-gradient-color-bottom: teal; 
-  $transparency-bottom: .5;
-  $vertical-angle: 180deg;
-
-  $image-gradient-color-left: teal; 
-  $transparency-left: .6;
-  $image-gradient-color-right: $red; 
-  $transparency-right: .6;
-  $horizontal-angle: 90deg;
-
-  .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
-      transparentize($image-gradient-color-bottom, $transparency-bottom));
-    display: block;
-    @include position(absolute, 0px 0px 0px 0px);
-
-    &:after {
-      content: '';
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
-        transparentize($image-gradient-color-right, $transparency-right));
-      display: block;
-      @include position(absolute, 0px 0px 0px 0px);
-    }
-  }
-}
-
 
 .first { // no margin for our first giant image
   margin-top:0px;
@@ -317,44 +232,43 @@ $offset: 50px; // offset from elements above for copy
   }
 }
 
-.bigcopy { // the big fifty-fifty at the beginning
-  color: white;
+.headercopy {
   position: absolute;
-  top: 50px;
-  left: -2px;
-  margin: auto;
-  z-index: 999;
-  text-align: center;
-  font-size:em(70);
+  margin-top: 350px;
+
+  @include span-columns(3);
+  @include shift(1);
+
+  @include media($tablet) {
+    @include span-columns(4);
+  }
+
+  @include media($mobile) {
+    @include span-columns(3);
+  }
+
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: em(13);
+
+  p {
+      font-weight: 100;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      line-height: 30px;
+  }
+
+  .sub-subtitle {
+
+  }
 }
 
-.toc-item {
-  border-bottom: 1px solid white;
-  margin-top:20px;
-  padding:20px 10px;
-  p {
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    font-size: $basesize * 0.6;
-    margin-bottom: 0;
-    font-weight: 400;
-  }
-  i {
-    padding-right:25px;
-    margin-top: 1100px;
-  }
-
-  &:first-of-type {
-    margin-top:-20px;
-  }
-
-  &:hover {
-    background-color: white;
-    color: $black;
-    a { color: $black }
-  }
-
-  a:hover {
-    color: $black;
-  }
+.kicker {
+  font-size: $basesize * 0.7;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: $red;
+  margin-bottom: 10px;
 }
