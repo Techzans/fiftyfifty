@@ -130,6 +130,7 @@ a { // no underline, underline on hover
   @include media($mobile) {
     @include shift(1);
     @include span-columns(3 of 4);  
+    overflow: hidden;
   }
 }
 

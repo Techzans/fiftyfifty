@@ -110,7 +110,8 @@ a {
       float: left;
       display: block;
       margin-right: 4.7619%;
-      width: 73.80952%; }
+      width: 73.80952%;
+      overflow: hidden; }
       .content:last-child {
         margin-right: 0; } }
 
