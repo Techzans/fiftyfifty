@@ -57,6 +57,30 @@ h2 {
   }
 }
 
+h3 {
+  font-family: $sans;
+  font-weight: 200;
+  font-style: normal;
+  font-size: em(30);
+
+  margin:0;
+}
+
+h4 {
+  font-family: $serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: em(34);
+
+  margin:0;
+}
+
+h5 {
+  @extend p;
+  margin-bottom: -15px;
+  font-weight: 600;
+}
+
 a { // no underline, underline on hover
   text-decoration:none;
   color: $black;
@@ -76,6 +100,15 @@ a { // no underline, underline on hover
   padding: 19.5px 6px 0 3px;
 }
 
+// photo captions
+.caption {
+  font-family: $serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: $basesize * 0.8;
+  margin-bottom: 15px;
+}
+
 
 // layout stuff
 
@@ -87,7 +120,7 @@ a { // no underline, underline on hover
 .content {
   @include span-columns(6);
   @include shift(2);
-  margin-top: 80px;
+  margin-top: 140px;
 
   @include media($tablet) {
     @include shift(1);
@@ -105,6 +138,24 @@ $offset: 50px; // offset from elements above for copy
 .column {
   @include span-columns(4 of 6);
   margin-top: $offset;
+
+  img {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
+}
+
+.column-full {
+  @include span-columns(6 of 6);
+  margin-top: $offset;
+
+  img {
+    width:100%;
+  }
 
   @include media($mobile) {
     @include span-columns(4 of 4);
@@ -128,6 +179,10 @@ $offset: 50px; // offset from elements above for copy
     margin: -35px 0 -30px 0;
     color: $red;
     letter-spacing: -2px;
+
+    @include media($tablet) {
+      font-size: $basesize * 4;
+    }
   }
 
   @include media($mobile) {
@@ -303,6 +358,8 @@ $offset: 50px; // offset from elements above for copy
   .subtitle {
     font-size: em(15);
     font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 15px;
   }
 
   transition: all 0.2s ease;
@@ -314,4 +371,48 @@ $offset: 50px; // offset from elements above for copy
       color: white;
     }
   }
+}
+
+// HEADSHOT STUFF GOES HERE
+
+.box {
+  margin-top: $offset;
+  border: 1px solid tint(black, 80%);
+  padding: 40px 40px 30px;
+  p {
+    font-size: $basesize * 0.82;
+  }
+}
+
+.headshot {
+    @include span-columns(2);
+    @include clearfix;
+    width:150px;
+    height:150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.david {
+  background: url(http://codeforamerica.org/media/images/people/david-leonard.jpg) no-repeat;
+}
+.maya {
+  background: url(http://codeforamerica.org/media/images/people/maya-benari.jpg) no-repeat;
+}
+.amy {
+  background: url(http://codeforamerica.org/media/images/people/amy-mok.jpg) no-repeat;
+}
+.hugh {
+  background: url(../../img/hugh.jpg) no-repeat;
+}
+.kevin {
+  background: url(../../img/kevin.jpg) no-repeat;
+}
+.lorenzo {
+  background: url(../../img/lorenzo.jpg) no-repeat;
+}
+.scott {
+  background: url(../../img/scott.jpg) no-repeat;
 }

@@ -8,12 +8,12 @@ body {
   padding: 0;
   color: #4c4c4c; }
 
-p {
+p, h5 {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.5625em; }
-  p:first-child {
+  p:first-child, h5:first-child {
     margin-top: 0; }
 
 h1 {
@@ -37,6 +37,24 @@ h2 {
     h2 {
       font-size: 3.75em; } }
 
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.875em;
+  margin: 0; }
+
+h4 {
+  font-family: "kepler-std-display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.125em;
+  margin: 0; }
+
+h5 {
+  margin-bottom: -15px;
+  font-weight: 600; }
+
 a {
   text-decoration: none;
   color: #4c4c4c; }
@@ -51,6 +69,13 @@ a {
   font-size: 6em;
   line-height: 60px;
   padding: 19.5px 6px 0 3px; }
+
+.caption {
+  font-family: "kepler-std-display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 15px; }
 
 .container {
   max-width: 100%;
@@ -67,7 +92,7 @@ a {
   margin-right: 1.85185%;
   width: 59.25926%;
   margin-left: 20.37037%;
-  margin-top: 80px; }
+  margin-top: 140px; }
   .content:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -97,6 +122,9 @@ a {
   margin-top: 50px; }
   .column:last-child {
     margin-right: 0; }
+  .column img {
+    width: 100%;
+    margin: 40px 0; }
   @media screen and (max-width: 587px) {
     .column {
       float: left;
@@ -104,6 +132,25 @@ a {
       margin-right: 4.7619%;
       width: 100%; }
       .column:last-child {
+        margin-right: 0; } }
+
+.column-full {
+  float: left;
+  display: block;
+  margin-right: 3.125%;
+  width: 100%;
+  margin-top: 50px; }
+  .column-full:last-child {
+    margin-right: 0; }
+  .column-full img {
+    width: 100%; }
+  @media screen and (max-width: 587px) {
+    .column-full {
+      float: left;
+      display: block;
+      margin-right: 4.7619%;
+      width: 100%; }
+      .column-full:last-child {
         margin-right: 0; } }
 
 .infobox {
@@ -115,7 +162,7 @@ a {
   padding-left: 15px; }
   .infobox:last-child {
     margin-right: 0; }
-  .infobox p {
+  .infobox p, .infobox h5 {
     font-size: 0.875em;
     font-style: italic;
     margin-bottom: 20px; }
@@ -127,6 +174,9 @@ a {
     margin: -35px 0 -30px 0;
     color: #df4949;
     letter-spacing: -2px; }
+    @media screen and (max-width: 768px) {
+      .infobox .bignumber {
+        font-size: 5em; } }
   @media screen and (max-width: 587px) {
     .infobox {
       display: none; } }
@@ -243,7 +293,7 @@ a {
       width: 73.80952%; }
       .headercopy:last-child {
         margin-right: 0; } }
-  .headercopy p {
+  .headercopy p, .headercopy h5 {
     font-weight: 100;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
@@ -288,7 +338,7 @@ a {
       width: 100%; }
       .toc-sub:last-child {
         margin-right: 0; } }
-  .toc-sub p {
+  .toc-sub p, .toc-sub h5 {
     text-align: center; }
   .toc-sub .numeral {
     font-family: "kepler-std-display", serif;
@@ -301,9 +351,58 @@ a {
     font-size: 1.25em; }
   .toc-sub .subtitle {
     font-size: 0.9375em;
-    font-style: italic; }
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 15px; }
   .toc-sub:hover {
     background-color: #4c4c4c;
     border: 0; }
-    .toc-sub:hover p {
+    .toc-sub:hover p, .toc-sub:hover h5 {
       color: white; }
+
+.box {
+  margin-top: 50px;
+  border: 1px solid #cccccc;
+  padding: 40px 40px 30px; }
+  .box p, .box h5 {
+    font-size: 1.025em; }
+
+.headshot {
+  float: left;
+  display: block;
+  margin-right: 1.85185%;
+  width: 18.51852%;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  margin-right: 40px;
+  margin-bottom: 10px; }
+  .headshot:last-child {
+    margin-right: 0; }
+  .headshot:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.david {
+  background: url(http://codeforamerica.org/media/images/people/david-leonard.jpg) no-repeat; }
+
+.maya {
+  background: url(http://codeforamerica.org/media/images/people/maya-benari.jpg) no-repeat; }
+
+.amy {
+  background: url(http://codeforamerica.org/media/images/people/amy-mok.jpg) no-repeat; }
+
+.hugh {
+  background: url(../../img/hugh.jpg) no-repeat; }
+
+.kevin {
+  background: url(../../img/kevin.jpg) no-repeat; }
+
+.lorenzo {
+  background: url(../../img/lorenzo.jpg) no-repeat; }
+
+.scott {
+  background: url(../../img/scott.jpg) no-repeat; }
