@@ -295,9 +295,6 @@ $offset: 50px; // offset from elements above for copy
       display: block;
       @include position(absolute, 0px 0px 0px 0px);
     }
-    @include media($mobile) {
-      height: 100%;
-    }
   }
 }
 
@@ -320,6 +317,7 @@ $offset: 50px; // offset from elements above for copy
   }
 
   @include media($mobile) {
+    display:none;
     @include span-columns(3);
   }
 
