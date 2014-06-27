@@ -256,3 +256,54 @@ a {
   letter-spacing: 5px;
   color: #df4949;
   margin-bottom: 10px; }
+
+.toc-sub {
+  margin-top: 50px;
+  border: 1px solid #cccccc;
+  float: left;
+  display: block;
+  margin-right: 3.125%;
+  width: 31.25%;
+  padding: 10px;
+  transition: all 0.2s ease; }
+  .toc-sub:last-child {
+    margin-right: 0; }
+  .toc-sub:nth-child(5) {
+    margin-right: 0; }
+  .toc-sub:nth-child(5+1) {
+    clear: left; }
+  @media screen and (max-width: 768px) {
+    .toc-sub {
+      float: left;
+      display: block;
+      margin-right: 3.125%;
+      width: 100%; }
+      .toc-sub:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 587px) {
+    .toc-sub {
+      float: left;
+      display: block;
+      margin-right: 6.45161%;
+      width: 100%; }
+      .toc-sub:last-child {
+        margin-right: 0; } }
+  .toc-sub p {
+    text-align: center; }
+  .toc-sub .numeral {
+    font-family: "kepler-std-display", serif;
+    font-weight: 200;
+    font-size: 5em;
+    margin-bottom: -30px; }
+  .toc-sub .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.25em; }
+  .toc-sub .subtitle {
+    font-size: 0.9375em;
+    font-style: italic; }
+  .toc-sub:hover {
+    background-color: #4c4c4c;
+    border: 0; }
+    .toc-sub:hover p {
+      color: white; }

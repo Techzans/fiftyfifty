@@ -258,10 +258,6 @@ $offset: 50px; // offset from elements above for copy
       padding-bottom: 10px;
       line-height: 30px;
   }
-
-  .sub-subtitle {
-
-  }
 }
 
 .kicker {
@@ -271,4 +267,51 @@ $offset: 50px; // offset from elements above for copy
   letter-spacing: 5px;
   color: $red;
   margin-bottom: 10px;
+}
+
+.toc-sub {
+  margin-top: $offset;
+  border: 1px solid tint(black, 80%);
+
+  @include span-columns(2 of 6);
+  @include omega(5);
+
+  @include media($tablet) {
+    @include span-columns(6 of 6);
+  }
+
+  @include media($mobile) {
+    @include span-columns(3 of 3);
+  }
+
+  padding: 10px;
+
+  p {
+    text-align: center;
+  }
+  .numeral {
+    font-family: $serif;
+    font-weight: 200;
+    font-size: em(80);
+    margin-bottom: -30px;
+  }
+  .title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: em(20);
+  }
+  .subtitle {
+    font-size: em(15);
+    font-style: italic;
+  }
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $black;
+    border: 0;
+    p {
+      color: white;
+    }
+  }
 }
