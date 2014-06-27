@@ -300,7 +300,6 @@ a {
         margin-right: 0; } }
   @media screen and (max-width: 587px) {
     .headercopy {
-      display: none;
       float: left;
       display: block;
       margin-right: 4.7619%;
@@ -312,6 +311,9 @@ a {
     border-bottom: 1px solid white;
     padding-bottom: 10px;
     line-height: 30px; }
+  @media screen and (max-width: 587px) {
+    .headercopy {
+      display: none; } }
 
 .kicker {
   font-size: 0.875em;

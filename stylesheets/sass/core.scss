@@ -317,7 +317,6 @@ $offset: 50px; // offset from elements above for copy
   }
 
   @include media($mobile) {
-    display:none;
     @include span-columns(3);
   }
 
@@ -331,6 +330,10 @@ $offset: 50px; // offset from elements above for copy
       border-bottom: 1px solid white;
       padding-bottom: 10px;
       line-height: 30px;
+  }
+
+  @include media($mobile) {
+    display:none;
   }
 }
 
