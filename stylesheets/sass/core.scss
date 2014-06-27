@@ -175,6 +175,12 @@ $offset: 50px; // offset from elements above for copy
     font-style: italic;
     margin-bottom: 20px;
   }
+  .head {
+    font-family: $serif;
+    font-weight: 900;
+    font-size: $basesize;
+    margin-top: -35px;
+  }
   .bignumber {
     font-family: $serif;
     font-weight: 900;
@@ -427,4 +433,8 @@ $offset: 50px; // offset from elements above for copy
 }
 .scott {
   background: url(../../img/scott.jpg) no-repeat;
+}
+
+.no-margin { // for columnar layout-y stuff
+  margin-top: 0;
 }

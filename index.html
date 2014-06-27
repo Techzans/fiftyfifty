@@ -9,6 +9,9 @@
     <!-- The fiftyfifty typekit -->
     <script type="text/javascript" src="//use.typekit.net/nqq6iza.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- meta viewport queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 </head>
 <body>
     <div class="container">
@@ -238,7 +241,7 @@
             </div>
 
             <!-- Neighborhood Revit -->
-            <div class="column">
+            <div class="column-full">
                 <h3>Focus Area: Neighborhood Revitalization</h3>
 
                 <p class="dropcap">Our research in San Antonio made one thing very clear: San Antonio loves its neighborhoods. The way people interact with their neighborhoods has a huge impact on the neighborhood’s viability and the quality of life it provides for residents. Well-kept neighborhoods with vibrant social scenes are highly sought after; their property values increase, and businesses build up around them.</p>
@@ -246,60 +249,332 @@
                 <p>We want to help residents come together and fix up their neighborhoods for themselves and the community at large.</p>
             </div>
 
+            <!-- HOMEBASE -->
+                <div class="column">
+                    <h4>Homebase</h4>
+
+                    <h5>Background / Problem</h5>
+                    <p>San Antonio is 296 years old. It is home to many old neighborhoods in various states of revitalization. The homes and businesses in these neighborhoods face significant structural and visual problems, like crumbling foundations, leaking roofs and busted floors.</p>
+
+                    <p><em>Difficulty accessing grants and incentives</em>
+                    <br>There are many financial incentives available to property owners to improve their homes and offices/retail spaces. These grants have complex eligibility rules and are administered by a number of different organizations. It’s an opaque process that frustrates users.<p>
+
+                    <p><em>Confusing permit and regulation system</em>
+                    <br>The city has set down a number of regulations intended to improve the aesthetic of neighborhoods and ensure home improvements are done safely. These rules are poorly explained and almost impossible to navigate without expert help.</p>
+
+                    <img src="../../img/housebw.jpg" alt="">
+                    <p class="caption">We visited many San Antonio neighborhoods to understand what problems residents faced in improving their properties.</p>
+
+                    <h5>Research</h5>
+                    <p>We discovered our problem through explorations of the cities’ most challenged neighborhoods and discussions with San Antonio residents who face significant hurdles in improving the quality of their homes.</p>
+
+                    <p>Community partners, including SA2020, the Westside Development Corporation and others stressed the deep strain put on neighborhoods by crumbling homes. We discovered that structural issues like holes in walls and slipping foundations prevented homeowners from heating their homes in the winter and cooling them in the summer.</p>
+
+                    <p>Homeowners told us of the difficulty they had finding the right contractors and navigating the rules to perform these projects. Many don’t have access to the cash to complete all the repairs required on their homes, and leave much-needed repairs for another time.</p>
+
+                    <img src="../../img/stickynotesbw.jpg" alt="Bw sticky notes">
+                    <p class="caption">We went through various stages of prototyping -- from sticky notes to in-browser wireframes -- trying to tackle the problem.</p>
+
+                    <h5>Solution</h5>
+                    <p>Our project will make it easy to apply for permits, find grants grants, and pick the right contractors to work on home repair projects. We believe these three elements are the key to encouraging people to take the first step toward improving their homes.</p>
+
+                    <p>In the long term, we’d like to see our tool used to revitalize neighborhoods and make residents proud of the place they live.</p>
+
+                    <img src="../../img/homebase1.png" alt="Homebase screenshot">
+                    <p class="caption">Our beta-release application walks users step-by-step through the process fix up their home.</p>
+
+                    <p><em>First steps</em>
+                    <br>We’re currently equipped to help homeowners get a few basic projects started by connecting them with the permits they need for the project. We’ve reformatted the current experience, which requires users to sort through cryptically-named PDF applications that arbitrarily group together different repairs. Our tool starts with the project -- users can select the repairs they want to complete, like adding a room -- and moves forward from there.</p>
+
+               </div><!-- ./column -->
+
+              <div class="infobox">
+                    <p class="bigquote">"I put $30k into this house and the contractor ran off with the money."</p>
+                    <p>Kalia, a homeowner we interviewed while researching home renovation in San Antonio, told us about how confusing the system was.</p>
+                </div>
+
+                <div class="no-margin column-full">&nbsp;</div><!-- clear out for next infobox -->
+
+                <div class="no-margin column">
+
+                    <p><em>Next steps</em>
+                    <br>We are exploring a few possible next steps, including integrating our app with the city’s backend to allow users to send their permit application with the click of a button, and to easily track its status online. We’re also investigating how to catalogue available grants and create a standard application process for them.</p>
+
+                    <p><em>Measuring success</em>
+                    <br>Our key metric to test our app against is improving the number of home repair permits applied for in the core downtown area. This area is home to challenged neighborhoods, some in states of deep disrepair.</p>
+
+                    <p>This metric was set forth by SA2020 as part of their Neighborhoods cause area, which is focused on improving the housing stock in San Antonio’s urban core and making the whole city a great place to live.</p>
+
+                    <!-- Target area: Increase inner-loop construction, improve housing index
+                    Metric: Annual number of renovation permits in urban core (inside 410 loop)
+                    Baseline: 863 in 2010, 802 in 2011. Seeking data on 2012, 2013.
+                    SA2020 Goal: 1,079 in 2020
+                    Our current goal: 1,000 by end of 2014 (+200 net increase from 2011) -->
+
+                    <h5>See it live</h5>
+                    <p>See the explainer website: <a href="http://homebasefix.com">http://homebasefix.com</a>
+                    <br>Test out the app: <a href="http://app.homebasefix.com">http://app.homebasefix.com</a></p>
+                </div>
+
+                <div class="infobox">
+                    <p class="head">Metrics for success</p>
+                    <p><strong>Metric:</strong> Annual number of renovation permits in urban core (inside 410 loop)</p>
+                    <p class="bignumber">863</p>
+                    <p><strong>Baseline:</strong> The number of permits applied for in 2010</p>
+                    <p class="bignumber">1k</p>
+                    <p><strong>Our Goal:</strong> The number of permits applied for by the end of 2014</p>
+                </div>
+            <!-- ./homebase -->
+
+            <!-- DOOR HANGERS -->
             <div class="column">
-                <h4>Homebase</h4>
 
-                <h5>Background / Problem</h5>
-                <p>San Antonio is 296 years old. It is home to many old neighborhoods in various states of revitalization. The homes and businesses in these neighborhoods face significant structural and visual problems, like crumbling foundations, leaking roofs and busted floors.</p>
+                <h4>Door Hanger Redesign</h4>
 
-                <p><em>Difficulty accessing grants and incentives</em>
-                <br>There are many financial incentives available to property owners to improve their homes and offices/retail spaces. These grants have complex eligibility rules and are administered by a number of different organizations. It’s an opaque process that frustrates users.<p>
+                <h5>Background / Problem:</h5>
+                <p>The city has placed a strong emphasis on improving the aesthetics of neighborhoods and ensuring work done on properties is properly permitted to promote safe, well-planned neighborhoods. The city uses code enforcement citations as the primary enforcement mechanism to ensure residents follow development codes and keep properties clean and safe.</p>
 
-                <p><em>Confusing permit and regulation system</em>
-                <br>The city has set down a number of regulations intended to improve the aesthetic of neighborhoods and ensure home improvements are done safely. These rules are poorly explained and almost impossible to navigate without expert help.</p>
+                <img src="../../img/badformbw.jpg" alt="The poorly designed code enforcement form">
+                <p class="caption">The forms used by Code Enforcement officers to inform residents of violations are hard to understand and poorly formatted.</p>
 
-                <img src="../../img/housebw.jpg" alt="">
-                <p class="caption">We visited many San Antonio neighborhoods to understand what problems residents faced in improving their properties.</p>
+                <p><em>Poor forms and explanations</em>
+                <br>The current code enforcement process relies on poorly-designed door hanger forms that provide little context for residents on why they were cited with a violation and how to fix the violation. The city website does not have effective resources to help residents understand the municipal codes that are behind code violations, further complicating the process.</p>
 
-                <h5>Research</h5>
-                <p>We discovered our problem through explorations of the cities’ most challenged neighborhoods and discussions with San Antonio residents who face significant hurdles in improving the quality of their homes.</p>
+                <h5>Research:</h5>
+                <p>Our team rode along with a city code enforcement team from Development Services Department. The code enforcement officer’s main job is to go door-to-door and notify residents if anything on their property does not comply with city development and upkeep codes.</p>
 
-                <p>Community partners, including SA2020, the Westside Development Corporation and others stressed the deep strain put on neighborhoods by crumbling homes. We discovered that structural issues like holes in walls and slipping foundations prevented homeowners from heating their homes in the winter and cooling them in the summer.</p>
+                <img src="../../img/badcomputerbw.jpg" alt="Poor computer application design">
+                <p class="caption">The Code Enforcement officers don't have it easy either. They use an outdated mainframe application to input violations -- often a frustrating experience.</p>
 
-                <p>Homeowners told us of the difficulty they had finding the right contractors and navigating the rules to perform these projects. Many don’t have access to the cash to complete all the repairs required on their homes, and leave much-needed repairs for another time.</p>
+                <p>If the residents are not at home when officers find a problem a door hanger is left with some information about the violation and a phone number to contact the code enforcement office.</p>
 
-                <h5>Solution</h5>
-                <p>Our project will make it easy to apply for permits, find grants grants, and pick the right contractors to work on home repair projects. We believe these three elements are the key to encouraging people to take the first step toward improving their homes.</p>
+                <p>A detailed look at these door hanger forms revealed a few issues:</p>
 
-                <p>In the long term, we’d like to see our tool used to revitalize neighborhoods and make residents proud of the place they live.</p>
+                <p>&bull; The language is hard to understand and is written for city, not for residents
+                There is no explanation of why confusing ordinances exist</p>
+                <p>&bull; Website links are broken or lead to pages that are difficult to navigate</p>
+                <p>&bull; The checklist or possible problems is too long, and provides little context for each issue</p>
+
+                <h5>Solution:</h5>
+                <p>We want to make it easier for the process easier to understand for residents by redesigning the form and language from their perspective. Specifically, we want the new form to:<p>
+
+                <p>&bull; Explain to residents why they need to follow the ordinance</p>
+                <p>&bull; Lay out a step-by-step guide for fixing the code violation</p>
+                <p>&bull; Link to easy-to-navigate resources to learn more about the city code behind the violation</p>
 
                 <p><em>First steps</em>
-                <br>We’re currently equipped to help homeowners get a few basic projects started by connecting them with the permits they need for the project. We’ve reformatted the current experience, which requires users to sort through cryptically-named PDF applications that arbitrarily group together different repairs. Our tool starts with the project -- users can select the repairs they want to complete, like adding a room -- and moves forward from there.</p>
+                <br>We have gone through a number of design iterations exploring better ways to present the information on door hangers. We’ve explored simpler-to-navigate forms that include all the violations and breaking forms down to include only one violation with in-depth details.</p>
+
+                <img src="../../img/newform1.jpg" alt="">
+                <p class="caption">Relying on visual cues can help us overcome comprehension and language barriers.</p>
+
+                <p>We’ve also created iterations that simply improve on the information architecture of the current form, but keep many of the details intact:</p>
+
+                <img src="../../img/newform2.jpg" alt="">
+                <p class="caption">Even reorganizing the form helps to make it easier to understand and navigate.</p>
+
+                <p>We hope to pair these door hanger forms with a simple-to-navigate website that breaks down each code violation, the city codes behind the violation, and to provide resources on how to fix the problem.</p>
+
+                <img src="../../img/fixthatproblem.png" alt="">
+                <p class="caption">A simple companion website that can be visited on mobile and desktop can help explain violations further.</p>
 
                 <p><em>Next steps</em>
-                <br>We are exploring a few possible next steps, including integrating our app with the city’s backend to allow users to send their permit application with the click of a button, and to easily track its status online. We’re also investigating how to catalogue available grants and create a standard application process for them.</p>
+                <br>Moving forward, we are planning to work closely with the code enforcement officers to put the test forms out in the field and see how to best explain issues to residents in a language they understand.</p>
 
-                <p><em>Measuring success</em>
-                <br>Our key metric to test our app against is improving the number of home repair permits applied for in the core downtown area. This area is home to challenged neighborhoods, some in states of deep disrepair.</p>
-
-                <p>This metric was set forth by SA2020 as part of their Neighborhoods cause area, which is focused on improving the housing stock in San Antonio’s urban core and making the whole city a great place to live.</p>
-
-                <!-- Target area: Increase inner-loop construction, improve housing index
-                Metric: Annual number of renovation permits in urban core (inside 410 loop)
-                Baseline: 863 in 2010, 802 in 2011. Seeking data on 2012, 2013.
-                SA2020 Goal: 1,079 in 2020
-                Our current goal: 1,000 by end of 2014 (+200 net increase from 2011) -->
+                <p>We’re also interested in working with the San Antonio website team to implement the web explainer improvements on the San Antonio website.</p>
 
                 <h5>See it live</h5>
-                <p>See the explainer website: <a href="http://homebasefix.com">http://homebasefix.com</a>
-                <br>Test out the app: <a href="http://app.homebasefix.com">http://app.homebasefix.com</a></p>
-            </div>
-            <div class="infobox">
-                <p class="bigquote">"I put $30k into this house and the contractor ran off with the money."</p>
-                <p>Kalia, a homeowner we interviewed while researching home renovation in San Antonio, told us about how confusing the system was.</p>
-            </div>
+                <p>Explainer website: <a href="http://fix-that-problem.webflow.com/">http://fix-that-problem.webflow.com/</a>
+                <br>Iterations on paper forms: <a href="https://github.com/Techzans/door-hanger-redesign">https://github.com/Techzans/door-hanger-redesign</a></p>
+
+            </div><!-- ./door-hangers -->
 
             <!-- ./neighborhood revit -->
+
+            <div class="column-full">
+                <img src="../../img/titosbw.jpg" alt="Titos Restaurant in San Antonio">
+                <p class="caption">Titos, our team's de-facto gathering spot to talk with our friends in the surrounding community.</p>
+            </div>
+
+            <!-- FOCUS AREA: CIVIC ENGAGEMENT -->
+            <div class="column-full">
+                <h3>Focus Area: Civic Engagement</h3>
+
+                <p class="dropcap">San Antonio stretches across 465 sprawling square miles. Its residents are a vibrant mix of cultures, nationalities and income levels. Its size and diversity make it a unique place to live, but also make it difficult for the city to stay connected with and understand the needs of large swaths of the population.</p>
+
+                <p>We want to help San Antonians feel more engaged with their government by opening up new channels for input into city halls’ day-to-day decisions. We also want to help residents feel more engaged and connected to the community they live in.</p>
+            </div>
+
+            <div class="column">
+                <h4>I Love San Antonio</h4>
+
+                <h5>Background / Problem</h5>
+                <p>San Antonio is a town of die-hard fans. Residents love their city, their local taqueria and their Spurs. But public conversations often focus on negatives rather than positives. There’s always a place to talk about improving the city, but we wanted to make a space to talk about the things that make San Antonio a great place to live.</p>
+
+                <h5>Research</h5>
+                <p>San Antonio is rising up to claim its place as one of America’s great cities. In many ways, despite the size of its population, it still seems like a small town. Social circles are tight, families stay in neighborhoods for a long time and getting people to break outside their bubble can be difficult. </p>
+
+                <p>Still, the tide of change is rising. Residents love the laid back spirit in San Antonio, but they’re also embracing the influx of things to do, great food to eat and vibrant social events that are bubbling up in the city.</p>
+
+                <p>We wanted to tap into that spirit to give residents a way to talk to each other about what they have always loved about San Antonio, and to appreciate the new opportunities in the city.</p>
+            </div>
+
+            <div class="infobox">
+                <p class="bigquote">"We aspire to be more. We have dreams and goals and leaders who say, 'Why not?'"</p>
+                <p>One resident's response to why they love San Antonio.</p>
+            </div>
+
+            <div class="column-full">
+                <img src="../../img/ilovesanantonio.png" alt="">
+                <p class="caption">A few of the responses on I Love San Antonio.</p>
+            </div>
+
+            <div class="column">
+                <h5>Solution</h5>
+                <p>I Love San Antonio is a public space to talk about everything that makes San Antonio a great place to live. Residents can post their musings about the Alamo City anonymously or sign them publicly with a twitter handle. The app encourages keeping responses short, so they can be tweeted out later by people who agree with the sentiment.</p>
+
+                <p><em>Measuring success</em>
+                <br>The application has received over 200 contributions since we deployed it. Residents’ love letters range from simple observations (“The people here are nice!”) to deep reflections (“Family, community, stable convergence of assets and initiatives forging a brilliant future. It’s got roots that are deep”).</p>
+
+                <h5>See it live</h5>
+                <p><a href="http://www.ilovesanantonio.org/">http://www.ilovesanantonio.org/</a></p>
+            </div>
+
+            <div class="infobox">
+                <p class="bignumber">200</p>
+                <p>The number of responses we received from residents who love San Antonio.</p>
+            </div>
+
+            <!-- ./i love san antonio -->
+
+            <!-- TALK TO YOUR MAYOR -->
+            <div class="column">
+                <h4>Talk to your Mayor</h4>
+                
+                <h5>Background / Problem</h5>
+                <p>San Antonio’s elected leaders have many channels open to receive feedback from their constituents. In addition to phone lines, Twitter handles and Facebook pages, officials host coffee chats, neighborhood meetings and walk the streets of their district to talk about needs and issues.</p>
+
+                <p>Not everyone can make it to these in-person meetings due to work, childcare needs, or other personal engagements. The passive forms of communication are often used by a select few with many specific concerns, but rarely invite general feedback from constituents.</p>
+
+                <h5>Research</h5>
+                <p>In our discussions with city council members and the community we found that very few people had frequent contact with their councilperson. Many did not even know who their councilperson was. There was no clear strategy across council offices for reaching out to the public and seeking feedback on specific issues. Most used a combination of email lists, Twitter, Facebook and in-person events. These channels still did not reach a large percentage of constituents.</p>
+
+                <p>We found that people were more likely to give input and feedback if it seemed easy to do so and if the feedback was clearly being taken into consideration for future decision making.</p>
+            </div>
+
+            <div class="infobox">
+                <p class="bignumber">10</p>
+                <p>Council members who, in addition to the mayor, who represent San Antonio residents in local matters.</p>
+            </div>
+
+            <div class="column-full">
+                <img src="../../img/talktoyourmayor.png" alt="Talk To Your Mayor">
+                <p class="caption">An early mockup of our landing page for the app, forked from the CityVoice repo.</p>
+            </div>
+
+            <div class="column">
+                <h5>Solution</h5>
+                <p>We are in the process of deploying Talk to your Mayor (tentatively named), an app that allows constituents to call in, listen to a recording from their councilperson request specific feedback on an issue, and have a normal conversation to give feedback on the issue.</p>
+
+                <p>Going forward, we’d like to help the mayor and council easily retrieve data from these calls and form the calls into a meaningful snapshot of what’s important to constituents right now.</p>
+                
+                <h5>See it live</h5>
+                <p><a href="http://talktosacitycouncil.herokuapp.com/">http://talktosacitycouncil.herokuapp.com/</a></p>
+            </div>
+            <!-- ./ talk to your mayor -->
+
+            <!-- ADOPT A DUMPSTER -->
+            <div class="column">
+                <h4>Adopt-a-Dumpster</h4>
+
+                <h5>Background / Problem:</h5>
+                <p>San Antonio has been struggling to prevent and clean up graffiti for many years. The city has a variety of programs in place to deter graffiti artists and to encourage residents to report tagging so the city can quickly clean it up. But, aside from a few infrequent programs, there are few resources directed toward helping residents clean up their neighborhoods.</p>
+
+                <img src="../../img/graffitiwipeout.jpg" alt="">
+                <p class="caption">A group cleans up a graffiti-covered dumpster in San Antonio. Photo provided by the City of San Antonio.</p>
+
+                <h5>Research:</h5>
+                <p>When we spoke with the council members representing southside districts, we heard one thing over and over again: graffiti is a major obstacle to cleaning up neighborhoods and getting residents involved in improving their surroundings. Graffiti is a major visual blight that distracts from the hard work being done to make the southside a safe, clean place to live.</p>
+            </div>
+
+            <div class="infobox">
+                <p class="bignumber">$8b</p>
+                <p>The cost of graffiti cleanup each year to cities in the United States.</p>
+            </div>
+
+            <div class="column-full">
+                <img src="../../img/adopta.png" alt="The Adopt-A-Dumpster Application">
+                <p class="caption">A basic interface to adopt and repaint your neighborhood dumpster, based on the Adopt-a-Hydrant application.</p>
+            </div>
+
+            <div class="column">
+                <h5>Solution:</h5>
+                <p>Following the template provided by Adopt-a-Hydrant in Boston, we wanted to find a way get residents actively involved in cleaning up the graffiti that covers their neighborhoods. While some kinds of cleanup -- street signs, public park property, etc. -- requires intervention from the city to be done correctly, minor cleanup can be done by a resident with a bucket of paint and some spare time.</p>
+
+                <p>We’re working to empower residents to start by cleaning up a major tagging target: the large green dumpsters that businesses and the city use to collect trash. In partnership with Waste Management, the private garbage collection contractor, and the city’s solid waste management department we’re working to extract structured data on the location of these dumpsters to allow residents to adopt them, pick up a can of paint from a city supply locker and clean them up.</p>
+
+                <h5>See it live:</h5>
+                <p><a href="http://adopt-a-dumpster.herokuapp.com/">http://adopt-a-dumpster.herokuapp.com/</a></p>
+            </div>
+            <!-- ./adopt-a-dumpster -->
+
+            <!-- WHAT DOES THE WEATHER ROCK -->
+
+            <div class="column">
+                <h4>What Does The Weather Rock Say?</h4>
+
+                <h5>Background / Problem:</h5>
+                <p>During city residency in February a number of fellowship teams worked together to deploy simple, fun applications that showed the crazy winter weather going on in their cities. Many teams focused on whether or not it was snowing. We were in Texas.</p>
+
+                <h5>Research:</h5>
+                <p>Our research for this application was pretty simple: we talked to our city partner about the weather rock lore and heard a lot of conversations from people around town talking about the crazy weather.</p>
+            </div>
+
+            <div class="infobox">
+                <p class="bignumber">95&deg;</p>
+                <p>The average high in San Antonio during the months of July and August. It gets pretty humid there, too.</p>
+            </div>
+
+            <div class="column-full">
+                <img src="../../img/weatherrock.png" alt="Weather Rock app">
+                <p class="caption">A look at the weather rock on a pretty hot day in San Antonio. They have a lot of those.</p>
+            </div>
+
+            <div class="column">
+                <h5>Solution:</h5>
+                <p>Our application is a reflection of a long-running joke popular with the locals called the weather rock. If you want to know the temperature, look at the weather rock. If the rock is swinging, it is windy. If the rock is warm, it is hot outside. This was a fun project that pokes fun at the serious business of meteorology in a very San Antonio way that citizens can laugh at.</p>
+
+                <h5>See it live:</h5>
+                <p><a href="http://www.whatdoestheweatherrocksay.com/" target="_blank">http://www.whatdoestheweatherrocksay.com/</a></p>
+            </div>
+            <!-- ./weather-rock -->
+            <!-- ./CIVIC ENGAGEMENT -->
+
+            <!-- FOCUS AREA: CIVIC ENGAGEMENT -->
+
+            <div class="column-full">
+                <img src="../../img/opendatabw.jpg" alt="San Antonio data center">
+                <p class="caption">The City of San Antonio's data center, home to a massive group of servers that holds city data and powers applications.</p>
+            </div>
+
+            <div class="column-full">
+                <h3>Focus Area: Open Data</h3>
+
+                <p class="dropcap">As part of our larger mission to improve city transparency and help empower an ecosystem of civic hackers to tackle local problems we’ve been focused on building an open data policy in San Antonio.</p>
+            </div>
+
+            <div class="column">
+                
+                <h5>Background / Problem:</h5>
+                The city has historically stored data in enterprise systems that are poorly documented, difficult to expose to the outside world and major blockers to cataloging and publishing high-value data sets. The city expressed interest at the outset of our fellowship in building an open data strategy, pointing toward the state’s open data policy that mandates publication of open data unearthed in the course of other business as a model.
+                We believe this effort will help the city become more transparent and allow residents to decompress and work on long-term city issues. We’re also excited to see how opening up data will allow the city to get a better perspective internally on how well they are accomplishing their goals.
+                Research:
+                A number of efforts, including the Open Data Census conducted during CodeAcross, showed the city was lacking in publishing important open data feeds. But the census and other conversations also showed the city was very interested in offering up more data for the public to consume and use. Our city partners at ITSD are primarily worried about the difficulty of extracting and properly cleaning the data to ensure the city is not exposing important resident information to the world.
+                Solution:
+                We are in the early stages of discussing what a city open data policy would look like, what form it would take, and what an appropriate timetable for implementation would be. We’ve also talked in-depth about what kind of open data portal the city would like to use, and what the maintenance strategy would be for the portal.
+                Our open data efforts are in very early stages, but we hope to continue to expand our goals and get San Antonio on track to regularly publishing important data by the end of our fellowship.
+
+            </div>
 
         </div><!-- ./content -->
 

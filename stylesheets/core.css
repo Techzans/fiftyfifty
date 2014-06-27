@@ -168,6 +168,11 @@ a {
     font-size: 0.875em;
     font-style: italic;
     margin-bottom: 20px; }
+  .infobox .head {
+    font-family: "kepler-std-display", serif;
+    font-weight: 900;
+    font-size: 1.25em;
+    margin-top: -35px; }
   .infobox .bignumber, .infobox .bigquote {
     font-family: "kepler-std-display", serif;
     font-weight: 900;
@@ -414,3 +419,6 @@ a {
 
 .scott {
   background: url(../../img/scott.jpg) no-repeat; }
+
+.no-margin {
+  margin-top: 0; }
