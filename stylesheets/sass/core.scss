@@ -141,7 +141,11 @@ $offset: 50px; // offset from elements above for copy
 
   img {
     width: 100%;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
+  }
+
+  .caption {
+    margin-bottom: 40px;
   }
 
   @include media($mobile) {
@@ -183,6 +187,14 @@ $offset: 50px; // offset from elements above for copy
     @include media($tablet) {
       font-size: $basesize * 4;
     }
+  }
+  .bigquote {
+    @extend .bignumber;
+    font-size: $basesize * 1.8;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin: 0 0 0 0;
+    color: $orange;
   }
 
   @include media($mobile) {

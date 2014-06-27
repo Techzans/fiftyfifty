@@ -124,7 +124,9 @@ a {
     margin-right: 0; }
   .column img {
     width: 100%;
-    margin: 40px 0; }
+    margin: 40px 0 0 0; }
+  .column .caption {
+    margin-bottom: 40px; }
   @media screen and (max-width: 587px) {
     .column {
       float: left;
@@ -166,7 +168,7 @@ a {
     font-size: 0.875em;
     font-style: italic;
     margin-bottom: 20px; }
-  .infobox .bignumber {
+  .infobox .bignumber, .infobox .bigquote {
     font-family: "kepler-std-display", serif;
     font-weight: 900;
     font-style: italic;
@@ -175,8 +177,14 @@ a {
     color: #df4949;
     letter-spacing: -2px; }
     @media screen and (max-width: 768px) {
-      .infobox .bignumber {
+      .infobox .bignumber, .infobox .bigquote {
         font-size: 5em; } }
+  .infobox .bigquote {
+    font-size: 2.25em;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin: 0 0 0 0;
+    color: #e27a3f; }
   @media screen and (max-width: 587px) {
     .infobox {
       display: none; } }
