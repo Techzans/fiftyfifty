@@ -272,7 +272,7 @@ a {
       left: 0px; }
     @media screen and (max-width: 587px) {
       .full .overlay {
-        max-height: 100vh; } }
+        height: 100%; } }
 
 .first {
   margin-top: 0px; }
