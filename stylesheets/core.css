@@ -270,6 +270,9 @@ a {
       right: 0px;
       bottom: 0px;
       left: 0px; }
+    @media screen and (max-width: 587px) {
+      .full .overlay {
+        max-height: 100vh; } }
 
 .first {
   margin-top: 0px; }

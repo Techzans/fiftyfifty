@@ -295,6 +295,9 @@ $offset: 50px; // offset from elements above for copy
       display: block;
       @include position(absolute, 0px 0px 0px 0px);
     }
+    @include media($mobile) {
+      max-height: 100vh;
+    }
   }
 }
 
