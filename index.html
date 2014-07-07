@@ -14,6 +14,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 </head>
 <body>
+
+<!-- 
+<button type="button" class="js-menu-trigger sliding-menu-button">
+  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/menu.png" alt="">
+</button>
+
+<nav class="js-menu sliding-menu-content">
+  <ul>
+    <li><a href="javascript:void(0)">Item 1</a></li>
+    <li><a href="javascript:void(0)">Item 2</a></li>
+    <li><a href="javascript:void(0)">Item 3</a></li>
+  </ul>
+</nav>  -->
+
+<div class="js-menu-screen menu-screen"></div>
+
+
     <div class="container">
 
         <div class="full first" id="header">
@@ -725,4 +742,22 @@
         </div>
     </div><!-- ./container -->
 </body>
+
+<script>
+    // for the hidden sidebar
+    $(document).ready(function(){
+      $('.js-menu-trigger').on('click touchstart', function(e){
+        $('.js-menu').toggleClass('is-visible');
+        $('.js-menu-screen').toggleClass('is-visible');
+        e.preventDefault();
+      });
+
+      $('.js-menu-screen').on('click touchstart', function(e){
+        $('.js-menu').toggleClass('is-visible');
+        $('.js-menu-screen').toggleClass('is-visible');
+        e.preventDefault();
+      });
+    });
+</script>
+
 </html>

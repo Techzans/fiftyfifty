@@ -1,0 +1,194 @@
+Revitalizing San Antonio Neighborhoods
+======================================
+
+A partnership between:
+Code for America, San Antonio Fellowship Team
+City of San Antonio, Information Technology Services Department
+
+July 2014
+
+---
+
+# Introduction
+
+The San Antonio Code for America team is made up of three technology experts partnered with the city to create innovative solutions to government and resident problems. Our 11-month engagement (January through November) gives us an opportunity to embed in the city and do external research with residents. We are then charged with developing and deploying applications to solve local problems. 
+
+## Our team
+
+### David Leonard
+Designer and Researcher, Code for America
+David designs simple user interfaces for real people. He recently worked at Gannett, helping their newspapers craft innovative strategies to use their content online and on mobile devices. He also crafted front pages for the Cincinnati Enquirer, Indianapolis Star and other major newspapers.
+
+### Maya Benari
+User Interaction and Experience Designer, Code for America
+Maya is a designer and web developer from Los Angeles. She is passionate about creating beautiful and functional online spaces that make a positive impact on the world. She graduated from UCLA where she studied art history and design.
+
+### Amy Mok
+Software Developer, Code for America
+Amy is a software engineer with a passion for space and social impact. Most recently, she led a team to identify and implement common designs in flight software to improve productivity in Lockheed Martin. She holds a BA in Computer Science from UC Berkeley and a MS in Software Engineering from Carnegie Mellon University. In her spare time, she likes to volunteer and travel.
+
+### Hugh Miller
+CIO/CTO, COSA ITSD
+Hugh manages the long-term vision for the City of San Antonio and maintains open communications with other department leaders and city political representatives to ensure ITSD’s services are up to par. Hugh was instrumental in bringing Google Fiber to the City of San Antonio.
+
+### Kevin Goodwin
+Assistant Director, COSA ITSD
+Kevin manages the Applications group, which maintains all of the city’s enterprise customer relations systems, internal business relations systems, and the city website. He also oversees the GIS team, which provides the city with mapping support and geo-based reporting.
+
+## About Code for America
+
+Founded in 2009, Code for America (CfA) is a national nonprofit that partners with local governments and citizens to foster civic innovation. By working to reinvigorate civic participation, accelerate the civic startup marketplace, facilitate collaboration between government leaders, and build new tools that enhance and strengthen communities, CfA is helping governments solve old problems in new ways. CfA is working towards a government by the people, for the people, that works in the 21st Century.
+
+## Our engagement with the city
+
+While the private sector has evolved exponentially over the past decade, adopting new technologies and new ways of working, local governments haven't adapted at the same rate. Code for America partners with local governments who are working to catch up. The Fellowship program embeds community-minded engineers and designers inside local governments to collaborate with municipal leaders. Together they create and implement web applications and explore new approaches to local problems.
+
+Our team is partnered with the City of San Antonio Information Technology Services Department. We have pulled on ITSD's extensive knowledge of internal systems and processes to help guide our research and development. 
+
+---
+
+# Executive Summary
+
+The Code for America team's long-term goal is to give residents the opportunity to improve their communities. In addition, through our partnership with the city we want to help local officials continue their efforts to be more transparent and modernize internal technology processes.
+
+Our research revealed that the city faces issues with revitalizing its aging housing stock in the urban core, especially in the downtown area and surrounding neighborhoods. Key contributors to this problem are:
+
+* A confusing permitting process and hard-to-understand land use rules
+* A lack of centralized information for homeowners who want to undertake repairs themselves
+* Insufficient information about finding capital to finance repairs
+
+We've developed Homebase, a web application that seeks to address these problems by:
+
+* Helping residents select an appropriate project to improve their home
+* Guiding homeowners through the permit selection and application process step-by-step
+* Explaining the basic land-use rules that apply to their project
+
+Moving forward, we want to make the process even simpler by:
+
+* Sorting through and recommending grants and financial incentives for applicable projects
+* Connecting homeowners with skilled labor to complete renovations they can't perform on their own
+
+## Timeline
+
+* January: City research from our San Francisco HQ
+* February: Extensive user research in San Antonio
+* March: Brainstorming and prototyping with our partners in ITSD
+* April: Set project area, build prototype application
+* May: Improve application, in-depth research with Development Services Department
+* June: Add features to application, continue user research
+* July: Finish basic application, begin testing for eventual release
+* August: Continue testing in the field, strategize with DSD on features
+* September: Preliminary public launch for application
+* October: Plan for future of application with ITSD, DSD
+* November: Deliver application to city
+
+## Key metrics
+
+We're currently hoping to improve these metrics with our application.
+
+### Number of renovation permits applied for within 410 loop annually
+
+Baseline: 863 in 2010
+Our goal: 1,000 in 2014
+
+This metric was set forth by SA2020 as part of their Neighborhoods cause area, which is focused on improving the housing stock in San Antonio’s urban core and making the whole city a great place to live.
+
+---
+
+# Research
+
+Research is foundation of our efforts in the City of San Antonio.
+
+## Methodology
+
+We focus on user-centered research to ensure we create applications that serve real problems. Our team interviewed hundreds of city employees, political leaders, community groups, local non-profits and average residents to get a full picture of what the city does well and where it needs help.
+
+We began our research by meeting with leadership and customer-facing officials in dozens of city departments. We focused our questions on areas where the user experience breaks down. We spoke in-depth with the City Council representatives and their staff members to hear common concerns voiced by residents over the phone, at town hall meetings and at Council meetings.
+
+We did on-the-ground research at a number of local nonprofits and NGOs, visiting and discussing the problems they face serving the community, interacting with each other and working with the city. Our research brought us to the San Antonio Food Bank, Haven for Hope, P16 Plus Council, Westside Development Corporation, San Antonio for Growth on the Eastside and more.
+
+We also visited residents homes and interviewed residents who came in to city service centers to seek help or do business.
+
+By approaching the resident experience from all sides, we tried to gain a full picture of how the city provides services and what services are ripe for intervention and improvement.
+
+## Research insights
+
+The city is providing a wide array of services to an increasingly dispersed population. A strained budget and cutback in distributed service centers have limited the day-to-day interaction residents have with city employees.
+
+### Key insights
+
+* Here
+* Here
+* Here
+
+### Council and executive staff
+
+Many city services
+
+### Development Services Department
+
+The centralization of building and land-use services at the One-Stop has provided efficiency and simplified the process of seeking out counsel on construction projects and related matters. However, some of the city's widely-dispersed population faces difficulty getting to the One-Stop, and information on the current website is hard to navigate and confusing. An upcoming redesign of the current website is a good step toward providing decentralized residents with information in their homes.
+
+Much of the information finding process for average homeowners and subject-matter experts (contractors, architects, etc.) is still manual. The Development Services Department call center is an indispensable but limited resource. Some residents also seek information in person from the DSD counter staff at the One-Stop; staff members' deep institutional knowledge is essential for helping many 
+
+### Code Enforcement
+
+### City residents
+
+## Honing research (???)
+
+---
+
+# Solution
+
+We're working on Homebase, a tool that will make it easy to apply for permits, find grants grants, and pick the right contractors to work on home repair projects. We believe these three elements are the key to encouraging people to take the first step toward improving their homes.
+
+In the long term, we’d like to see our tool used to revitalize neighborhoods and make residents proud of the place they live.
+
+## Homebase: Overview
+
+We’re currently equipped to help homeowners get a few basic projects started by connecting them with the permits they need for the project. 
+We’ve reformatted the current experience, which is focused on how the city categorizes information internally. Our tool starts with the project -- users can select the repairs they want to complete, like adding a room -- and moves forward from there.
+
+### What it does
+
+
+
+### Vision for the future
+
+Moving forward, we're interested in integrating the 
+
+We are exploring a few possible next steps, including integrating our app with the city’s backend to allow users to send their permit application with the click of a button, and to easily track its status online. We’re also investigating how to catalogue available grants and create a standard application process for them.
+
+---
+
+# Metrics
+
+## Choosing metrics
+
+[SA2020, etc]
+
+## Metric 1: Housing index, permits issued
+
+[Increase revitalization efforts]
+
+## Metric 2: Increase number of permits applied for online
+
+[Decrease load on DSD, build capacity.]
+
+## Metric 3: Increase outlay of RenewSA grants
+
+[Still researching.]
+
+---
+
+# Moving forward
+
+## Sustainability
+
+## Support we need
+
+---
+
+# Stay in touch
+
