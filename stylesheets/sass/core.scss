@@ -109,12 +109,10 @@ a { // no underline, underline on hover
   margin-bottom: 15px;
 }
 
-
 // layout stuff
 
 .container {
   @include outer-container;
-
 }
 
 .content {
@@ -131,6 +129,27 @@ a { // no underline, underline on hover
     @include shift(1);
     @include span-columns(3 of 4);  
     overflow: hidden;
+  }
+}
+
+// let's have a cool sidebar
+
+$viewheight: 100vh;
+
+#sidebar {
+  position: absolute;
+  left: 50px;
+
+  @include media($tablet) { // but let's hide it on tablet or smaller
+    display: none;
+  }
+
+  font-family: $sans;
+  font-size: $basesize * 0.7;
+
+  ul {
+    list-style-type: none; // bye bullets
+    padding-left: 0; // no indent either
   }
 }
 
