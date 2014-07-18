@@ -77,6 +77,43 @@ a {
   font-size: 1em;
   margin-bottom: 15px; }
 
+#introtext {
+  margin-top: -270px; }
+
+#sidebar {
+  float: left;
+  margin-left: -180px;
+  overflow: visible;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
+  font-size: 0.875em;
+  line-height: 2em;
+  color: #939393; }
+  @media screen and (max-width: 955px) {
+    #sidebar {
+      margin-left: -140px; } }
+  @media screen and (max-width: 768px) {
+    #sidebar {
+      display: none; } }
+  #sidebar .active {
+    font-weight: 600;
+    color: #4c4c4c; }
+  #sidebar .title {
+    font-family: "kepler-std-display", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.75em;
+    color: #efa4a4;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+  #sidebar a {
+    border-bottom: none; }
+    #sidebar a:hover {
+      border-bottom: 4px solid #45b29d; }
+  #sidebar ul {
+    list-style-type: none;
+    padding-left: 0; }
+
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -87,6 +124,7 @@ a {
     clear: both; }
 
 .content {
+  position: relative;
   float: left;
   display: block;
   margin-right: 1.85185%;

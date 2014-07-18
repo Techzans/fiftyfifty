@@ -109,15 +109,70 @@ a { // no underline, underline on hover
   margin-bottom: 15px;
 }
 
+// let's have a cool sidebar
+
+#introtext { 
+  margin-top:-270px; // this is a dumb hacky way to get the initial sidebar position right
+}
+
+#sidebar {
+
+  float:left;
+  margin-left: -180px;
+  overflow: visible;
+
+  @include media($sidebar-breaks) {
+    margin-left: -140px;
+  }
+
+
+  @include media($tablet) { // but let's hide it on tablet or smaller
+    display: none;
+  }
+
+  font-family: $sans;
+  font-size: $basesize * 0.7;
+  line-height: $basesize * 1.6;
+  color: tint($black, 40%);
+
+  .active {
+    font-weight: 600;
+    color: $black;
+  }
+
+  .title {
+    font-family: $serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: $basesize * 1.4;
+    color: tint($red, 50%);
+
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    border-bottom:none;
+    &:hover {
+      border-bottom: 4px solid $lightblue;
+    }
+  }
+
+  ul {
+    list-style-type: none; // bye bullets
+    padding-left: 0; // no indent either
+  }
+}
 
 // layout stuff
 
 .container {
   @include outer-container;
-
 }
 
 .content {
+  position: relative;
   @include span-columns(6);
   @include shift(2);
   margin-top: 140px;
