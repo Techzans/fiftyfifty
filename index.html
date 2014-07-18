@@ -12,6 +12,16 @@
 
     <!-- meta viewport queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+    <!-- Let's have a cool sticky-scroll-spying sidebar -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#sidebar").sticky({topSpacing:50});
+      });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -33,12 +43,19 @@
 
         <div id="sidebar">
             <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 33333</li>
-            </ul>
+                <li class="title">fifty/fifty</li>
+                <li id="sidebar-intro" class="active"><a href="#intro">Introduction</a></li>
+                <li id="sidebar-toc"><a href="#tableofcontents">Table of Contents</a></li>
+                <li id="sidebar-team"><a href="#team">The Team</li>
+                <li id="sidebar-timeline"><a href="#timeline">The Timeline</a></li>
+                <li id="sidebar-city"><a href="#city">The City</a></li>
+                <li id="sidebar-plan"><a href="#engagements">The Plan</a></li>
+                <li id="sidebar-culture"><a href="#culture">The Culture</a></li>
+                <li id="sidebar-end"><a href="#wrapup">The End</a></li>
+
         </div>
 
+        <div id="introtext">
             <p class="kicker">Introduction</p>
             <h2>We want our legacy to be more than an app.</h2>
             <div class="column">
@@ -55,6 +72,7 @@
                 <p class="bignumber">06</p>
                 <p>Our core engagements -- apps we're creating, policies we're working on, processes we're redesigning</p>
             </div>
+        </div>
         </div><!-- ./intro -->
 
         <!-- Table of Contents -->
