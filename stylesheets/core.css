@@ -124,6 +124,7 @@ a {
     clear: both; }
 
 .content {
+  position: relative;
   float: left;
   display: block;
   margin-right: 1.85185%;

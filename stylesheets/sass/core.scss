@@ -172,6 +172,7 @@ a { // no underline, underline on hover
 }
 
 .content {
+  position: relative;
   @include span-columns(6);
   @include shift(2);
   margin-top: 140px;
